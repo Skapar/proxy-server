@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  proxy-server:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - ENV_FILE=.env.dist
+    container_name: proxy-server
