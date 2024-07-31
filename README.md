@@ -92,37 +92,3 @@ This should return OK with a 200 status code if the server is healthy.
 ## Swagger Documentation
 
 Access the Swagger documentation at <http://localhost:8080/swagger/> to view and interact with the API endpoints.
-
-## Project Structure
-
-myproxy/
-  ├── cmd/
-  │   └── main.go
-  ├── docs/
-  ├── internal/
-  │   └── proxy/
-  │       ├── handler.go
-  │       ├── health.go
-  │       └── storage.go
-  ├── swagger.yaml
-  ├── docker-compose.yml
-  ├── Dockerfile
-  ├── go.mod
-  ├── go.sum
-  ├── Makefile
-  └── README.md
-
-## Files
-
-cmd/main.go: Entry point for the application.
-internal/proxy/handler.go: Contains the logic for handling and validating incoming requests.
-internal/proxy/health.go: Contains the health check endpoint.
-internal/proxy/storage.go: Manages the storage of requests and responses.
-swagger.yaml: Defines the Swagger documentation for the API.
-Dockerfile: Defines the Docker image.
-docker-compose.yml: Manages Docker services.
-Makefile: Automates the build and run processes.
-
-## Validation
-
-The server performs validation on the incoming request data to ensure that the required fields are present. If any fields are missing or invalid, the server returns a 400 Bad Request response with a detailed error message.
