@@ -30,17 +30,17 @@ This project is an HTTP proxy server written in Go. It accepts JSON requests to 
 
 ### Building and Running
 
-To build the Docker image:
+- To build the Docker image:
 
 make build
 
-To run the Docker container:
+- To run the Docker container:
 
 make run
-Usage
-Start the server
 
-Ensure the server is running by executing the above commands. The server will be listening on port 8080.
+- Start the server
+
+- Ensure the server is running by executing the above commands. The server will be listening on port 8080.
 
 ## Sending a POST Request
 
@@ -82,7 +82,7 @@ Example response:
 
 ## Health Check
 
-Check the health of the server by sending a GET request to /health:
+- Check the health of the server by sending a GET request to /health:
 
 ```bash
 curl --location --request GET 'http://localhost:8080/health'
@@ -91,4 +91,4 @@ This should return OK with a 200 status code if the server is healthy.
 
 ## Swagger Documentation
 
-Access the Swagger documentation at <http://localhost:8080/swagger/> to view and interact with the API endpoints.
+- Access the Swagger documentation at <http://localhost:8080/swagger/> to view and interact with the API endpoints.
